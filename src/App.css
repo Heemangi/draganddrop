@@ -1,0 +1,100 @@
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px; 
+  height: 100%; 
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+
+.page {
+  width: 80%;
+  height: 100vh; 
+  overflow: auto; 
+}
+
+
+.sidebar-item {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.921);
+  color: black;
+  border-radius: 5px;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.modal {
+  position: fixed;
+  width: 320px;
+  height: 470px;
+  top: var(--modal-top, 50%);
+  left: var(--modal-left, 50%);
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.modal input,
+.modal button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.modal input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.modal input:focus,
+.modal button:focus {
+  outline: none;
+}
+
+.modal button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+
+.modal h1 {
+  display: flex;
+  align-items: center;
+}
+
+.modal hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.modal .close-btn {
+  position: absolute;
+  top: 10px;
+  left: 140px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
